@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #4287ff"
+            xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="ui.pantallas.pantallabusqueda.BusquedaController">
+    <MFXTextField fx:id="difficulty" layoutX="69.0" layoutY="425.0" prefHeight="99.0" prefWidth="664.0"
+                  style="-fx-background-color: #105deb; -fx-border-color: #105deb; -fx-opacity: 0.5;"/>
+    <ImageView fx:id="searchButton" fitHeight="46.0" fitWidth="147.0" layoutX="524.0" layoutY="43.0"
+               onMouseClicked="#getNiveles" pickOnBounds="true" preserveRatio="true"/>
+    <ImageView fx:id="filterAuto" fitHeight="80.0" fitWidth="80.0" layoutX="78.0" layoutY="435.0" pickOnBounds="true"
+               preserveRatio="true"/>
+    <ImageView fx:id="filterEasy" fitHeight="80.0" fitWidth="80.0" layoutX="170.0" layoutY="435.0" pickOnBounds="true"
+               preserveRatio="true"/>
+    <ImageView fx:id="filterNormal" fitHeight="80.0" fitWidth="80.0" layoutX="262.0" layoutY="435.0" pickOnBounds="true"
+               preserveRatio="true"/>
+    <ImageView fx:id="filterHard" fitHeight="80.0" fitWidth="80.0" layoutX="354.0" layoutY="435.0" pickOnBounds="true"
+               preserveRatio="true"/>
+    <ImageView fx:id="filterHarder" fitHeight="80.0" fitWidth="80.0" layoutX="446.0" layoutY="435.0" pickOnBounds="true"
+               preserveRatio="true"/>
+    <ImageView fx:id="filterInsane" fitHeight="80.0" fitWidth="80.0" layoutX="538.0" layoutY="435.0" pickOnBounds="true"
+               preserveRatio="true"/>
+    <ImageView fx:id="filterDemon" fitHeight="80.0" fitWidth="80.0" layoutX="630.0" layoutY="435.0" pickOnBounds="true"
+               preserveRatio="true"/>
+    <ImageView fx:id="infoButton" fitHeight="89.0" fitWidth="91.0" layoutX="665.0" layoutY="120.0" pickOnBounds="true"
+               preserveRatio="true" onMouseClicked="#ayuda"/>
+    <ImageView fx:id="backButton" fitHeight="73.0" fitWidth="80.0" layoutX="29.0" layoutY="30.0"
+               onMouseClicked="#volverAtras" pickOnBounds="true" preserveRatio="true"/>
+    <MFXToggleButton fx:id="autoButton" layoutX="78.0" layoutY="435.0" onMouseClicked="#autoFilter" prefHeight="80.0"
+                     prefWidth="80.0"/>
+    <MFXToggleButton fx:id="easyButton" layoutX="170.0" layoutY="435.0" onMouseClicked="#easyFilter" prefHeight="80.0"
+                     prefWidth="80.0"/>
+    <MFXToggleButton fx:id="normalButton" layoutX="262.0" layoutY="435.0" onMouseClicked="#normalFilter"
+                     prefHeight="80.0" prefWidth="80.0"/>
+    <MFXToggleButton fx:id="hardButton" layoutX="354.0" layoutY="435.0" onMouseClicked="#hardFilter" prefHeight="80.0"
+                     prefWidth="80.0"/>
+    <MFXToggleButton fx:id="harderButton" layoutX="446.0" layoutY="435.0" onMouseClicked="#harderFilter"
+                     prefHeight="80.0" prefWidth="80.0"/>
+    <MFXToggleButton fx:id="insaneButton" layoutX="538.0" layoutY="435.0" onMouseClicked="#insaneFilter"
+                     prefHeight="80.0" prefWidth="80.0"/>
+    <MFXToggleButton fx:id="demonButton" layoutX="630.0" layoutY="435.0" onMouseClicked="#demonFilter" prefHeight="80.0"
+                     prefWidth="80.0"/>
+    <ImageView fx:id="userSearchButton" fitHeight="57.0" fitWidth="61.0" layoutX="703.0" layoutY="43.0"
+               onMouseClicked="#cargarUsuario" pickOnBounds="true" preserveRatio="true"/>
+    <MFXTextField fx:id="searchBox" layoutX="121.0" layoutY="34.0" opacity="0.5" prefHeight="57.0" prefWidth="395.0"
+                  style="-fx-background-color: #105deb; -fx-border-color: #105deb; -fx-opacity: 0.5;">
+        <font>
+            <Font name="System Bold Italic" size="24.0"/>
+        </font>
+        <textFill>
+            <Color red="1.0" green="1.0" blue="1.0"/>
+        </textFill>
+    </MFXTextField>
+</AnchorPane>

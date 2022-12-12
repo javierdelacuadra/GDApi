@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #4287ff;"
+            xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="ui.pantallas.pantallaniveles.ResultadoNivelesController">
+    <ImageView fx:id="backButton" fitHeight="73.0" fitWidth="80.0" layoutX="29.0" layoutY="30.0"
+               onMouseClicked="#volverAtras" pickOnBounds="true" preserveRatio="true"/>
+    <TableView fx:id="table" layoutX="155.0" layoutY="108.0" prefHeight="287.0" prefWidth="489.0">
+        <columns>
+            <TableColumn fx:id="name" prefWidth="124.39997863769531" text="Name"/>
+            <TableColumn fx:id="id" prefWidth="75.33331298828125" text="ID"/>
+            <TableColumn fx:id="author" prefWidth="98.0" text="Author"/>
+            <TableColumn fx:id="difficulty" prefWidth="96.66665649414062" text="Difficulty"/>
+            <TableColumn fx:id="length" prefWidth="100.0" text="Length"/>
+        </columns>
+    </TableView>
+</AnchorPane>

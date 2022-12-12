@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #4287ff;"
+            xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="ui.pantallas.pantallausers.ResultadoUsersController">
+    <ImageView fx:id="backButton" fitHeight="73.0" fitWidth="80.0" layoutX="22.0" layoutY="57.0"
+               onMouseClicked="#volverAtras" pickOnBounds="true" preserveRatio="true"/>
+    <MFXTextField fx:id="background" layoutX="122.0" layoutY="81.0" prefHeight="471.0" prefWidth="664.0"
+                  style="-fx-background-color: #994d00; -fx-border-color: #994d00; -fx-opacity: 0.9;"/>
+    <Label fx:id="usernameLabel" layoutX="388.0" layoutY="93.0" prefHeight="51.0" prefWidth="88.0" text="NOMBRE">
+        <font>
+            <Font size="21.0"/>
+        </font>
+    </Label>
+    <Label fx:id="starLabel" layoutX="172.0" layoutY="160.0" text="ESTRELLAS">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Label>
+    <Label fx:id="diamondLabel" layoutX="172.0" layoutY="316.0" text="DIAMANTES">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Label>
+    <Label fx:id="scoinsLabel" layoutX="172.0" layoutY="458.0" text="SCOINS">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Label>
+    <Label fx:id="ucoinsLabel" layoutX="486.0" layoutY="160.0" text="UCOINS">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Label>
+    <Label fx:id="demonLabel" layoutX="486.0" layoutY="316.0" text="DEMONS">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Label>
+    <Label fx:id="cpLabel" layoutX="486.0" layoutY="458.0" text="CP">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Label>
+    <ImageView fx:id="starIcon" fitHeight="73.0" fitWidth="74.0" layoutX="281.0" layoutY="137.0" pickOnBounds="true"
+               preserveRatio="true"/>
+    <ImageView fx:id="diamondIcon" fitHeight="73.0" fitWidth="74.0" layoutX="289.0" layoutY="293.0" pickOnBounds="true"
+               preserveRatio="true"/>
+    <ImageView fx:id="scoinsIcon" fitHeight="73.0" fitWidth="74.0" layoutX="281.0" layoutY="435.0" pickOnBounds="true"
+               preserveRatio="true"/>
+    <ImageView fx:id="ucoinsIcon" fitHeight="73.0" fitWidth="74.0" layoutX="611.0" layoutY="137.0" pickOnBounds="true"
+               preserveRatio="true"/>
+    <ImageView fx:id="demonIcon" fitHeight="73.0" fitWidth="74.0" layoutX="611.0" layoutY="293.0" pickOnBounds="true"
+               preserveRatio="true"/>
+    <ImageView fx:id="cpIcon" fitHeight="73.0" fitWidth="74.0" layoutX="611.0" layoutY="435.0" pickOnBounds="true"
+               preserveRatio="true"/>
+</AnchorPane>

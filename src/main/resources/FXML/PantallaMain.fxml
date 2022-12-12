@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<BorderPane fx:id="root" prefHeight="600.0" prefWidth="800.0" style="-fx-background-radius: 10; -fx-border-radius: 10;"
+            xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="ui.pantallas.pantallamain.MainController">
+    <top>
+        <HBox fx:id="header" alignment="TOP_RIGHT" prefHeight="60.0" prefWidth="200.0" BorderPane.alignment="CENTER"
+              style="-fx-background-color: #4287ff">
+            <ImageView fx:id="botonClose" fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true"/>
+        </HBox>
+    </top>
+</BorderPane>
